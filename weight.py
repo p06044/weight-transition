@@ -17,4 +17,5 @@ for col in [0, 1]:
 weight = data[:,1]
 plt.xticks(rotation =12)
 plt.plot(date, weight, label="weight transition")
+plt.legend()
 plt.savefig("$HOME/weight.png")
