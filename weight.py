@@ -3,7 +3,7 @@ import xlrd
 import numpy as np
 import os
 from matplotlib import pyplot as plt
-book = xlrd.open_workbook('$HOME/統計記録.xls')
+book = xlrd.open_workbook('$HOME/weight.xls')
 sheet = book.sheet_by_index(1)
 nrows = sheet.nrows
 data = np.zeros(2*nrows).reshape((nrows,2))
