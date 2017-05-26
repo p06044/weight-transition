@@ -16,6 +16,6 @@ for col in [0, 1]:
 		data[row,col] = sheet.cell(row,col).value
 weight = data[:,1]
 plt.xticks(rotation =12)
-plt.plot(date, weight, label="weight transition")
+plt.plot(date, weight, label=date[nrows-1])
 plt.legend()
 plt.savefig("$HOME/weight.png")
