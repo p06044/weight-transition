@@ -2,6 +2,8 @@
 import xlrd
 import numpy as np
 import os
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 book = xlrd.open_workbook('$HOME/weight.xls')
 sheet = book.sheet_by_index(1)
