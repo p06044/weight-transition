@@ -17,7 +17,7 @@ for col in [0, 1]:
 			date.append(d)
 		data[row,col] = sheet.cell(row,col).value
 weight = data[:,1]
-plt.figure(figsize=(12,8))
+plt.figure(figsize=(12,6))
 plt.xticks(rotation =12)
 plt.plot(date, weight, label=date[nrows-1])
 plt.legend()
